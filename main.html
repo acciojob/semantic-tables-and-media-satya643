@@ -3,11 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Semantic Tables and Media</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    ol {
+      list-style-position: inside;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Semantic Table -->
-  <table border="1">
+  <table>
     <thead>
       <tr>
         <th>Roll Number</th>
@@ -30,21 +51,24 @@
     </tbody>
   </table>
 
-  <!-- Heading between table and list -->
+  <!-- Heading Between Table and List -->
   <h2>List of medias</h2>
 
   <!-- Ordered List with Media Items -->
   <ol>
     <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Random Image from Picsum">
+      <p>Image:</p>
+      <img src="https://picsum.photos/id/123/200/300" alt="Random Scenic Image">
     </li>
     <li>
+      <p>Video:</p>
       <video width="320" height="240" controls>
         <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </li>
     <li>
+      <p>Audio:</p>
       <audio controls>
         <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
         Your browser does not support the audio element.

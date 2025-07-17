@@ -7,7 +7,7 @@
 <body>
 
   <!-- Semantic Table -->
-  <table>
+  <table border="1">
     <thead>
       <tr>
         <th>Roll Number</th>
@@ -17,40 +17,41 @@
     <tbody>
       <tr>
         <td>101</td>
-        <td>John</td>
+        <td>Alice</td>
       </tr>
       <tr>
         <td>102</td>
-        <td>Emma</td>
+        <td>Bob</td>
       </tr>
       <tr>
         <td>103</td>
-        <td>Rahul</td>
+        <td>Charlie</td>
       </tr>
     </tbody>
   </table>
 
-  <!-- Required Heading between table and list -->
+  <!-- Required Heading -->
   <h2>List of medias</h2>
 
-  <!-- Ordered List of Media -->
+  <!-- Ordered List with Media -->
   <ol>
     <!-- First Item: Image -->
     <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Sample random image from Picsum">
+      <img src="https://picsum.photos/id/123/200/300" alt="Sample Image">
     </li>
 
-    <!-- Second Item: Video (src directly on <video>) -->
+    <!-- Second Item: Video with <source> -->
     <li>
-      <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls width="320">
+      <video controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </li>
 
-    <!-- Third Item: Audio (src directly on <audio>) -->
+    <!-- Third Item: Audio -->
     <li>
-      <audio src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" controls>
-        Your browser does not support the audio element.
+      <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+        Your browser does not support the audio tag.
       </audio>
     </li>
   </ol>
